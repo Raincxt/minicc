@@ -745,7 +745,7 @@ void define_macro(char *name, char *buf) {
 //name：宏定义的name
 //功能：删除该宏定义
 void undef_macro(char *name) {
-  hashmap_delete(&macros, name);
+  hashmap_remove(&macros, name);
   //c++
 }
 
